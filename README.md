@@ -6,9 +6,9 @@
 ## Install Dependecies
 **1. Install Packages**
 ```bash
-sudo apt-get update && sudo apt-get upgrade -y
+brew update
 
-sudo apt install screen curl nano  -y
+brew upgrade
 ```
 **2. Install Rust**
 ```bash
@@ -24,12 +24,12 @@ curl --proto '=https' --tlsv1.2 -sSfL https://solana-install.solana.workers.dev 
 ```
 * Close and reopen your Terminal.
 ```
-solana version
+solana --version
 ```
 * If you get `solana: command not found` RUN :
 ```bash
 echo 'export PATH="/root/.local/share/solana/install/active_release/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
+source ~/.zshrc
 ```
 ```
 solana --version
@@ -57,7 +57,7 @@ cargo install bitz
 ---
 
 ## Run Bitz Miner
-### 1. Open a screen
+### 1. Open a screen (Can be ignored)
 
 ```bash
 screen -S bitz
